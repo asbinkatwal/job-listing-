@@ -1,5 +1,5 @@
 from rest_framework import serializers 
-from .models import Job
+from .models import Job ,FileUpload
 from django.contrib.auth.models import User
 
 
@@ -37,3 +37,15 @@ class RegisterSerializer(serializers.ModelSerializer):
             last_name=validated_data['last_name']
         )
         return user
+    
+
+
+class FileUploadSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = FileUpload
+        fields = '__all__'
+        read_only_fields = ['uploaded_by', 'uploaded_at']
+
+def get_file_url(self, obj):
+        request = self.context.get('request')
+        return request.build_absolute_uri(obj.file.url) if request else obj.file.url

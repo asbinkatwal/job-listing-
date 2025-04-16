@@ -1,14 +1,17 @@
-from django.shortcuts import get_object_or_404
-from rest_framework.decorators import api_view, permission_classes
+from rest_framework.decorators import api_view, permission_classes,parser_classes
 from rest_framework.response import Response
 from rest_framework import status, permissions
-from .models import Job 
+from .models import Job , FileUpload
 from django.contrib.auth import authenticate
-from .serializers import JobSerializer,RegisterSerializer,UserSerializer
+from .serializers import JobSerializer,RegisterSerializer,UserSerializer, FileUploadSerializer
 from rest_framework_simplejwt.tokens import RefreshToken
 from rest_framework.permissions import AllowAny
 from rest_framework.permissions import IsAuthenticated
-from django.contrib.auth.models import User
+from rest_framework.parsers import MultiPartParser, FormParser
+from .models import User
+
+
+
  
 
 
@@ -16,9 +19,14 @@ from django.contrib.auth.models import User
 @permission_classes([AllowAny]) 
 
 def register(request):
-    print("Received data:", request.data)  
+  
     serializer = RegisterSerializer(data=request.data)
     if serializer.is_valid():
+        email = serializer.validated_data['email']
+        if User.objects.filter(email=email).exists():
+            return Response({
+                "message": "A user with this email already exists."
+            }, status=status.HTTP_400_BAD_REQUEST)
         user = serializer.save()
         return Response({
             "user": UserSerializer(user).data,
@@ -100,3 +108,35 @@ def job_detail(request, pk):
 
     return Response({'error': 'Permission denied'}, status=status.HTTP_403_FORBIDDEN)
 ###
+
+
+
+@api_view(['POST'])
+@permission_classes([IsAuthenticated])
+@parser_classes([MultiPartParser, FormParser])
+def upload_file(request):
+    data = request.data.copy()
+    data['uploaded_by'] = request.user.id
+    serializer = FileUploadSerializer(data=data)
+    if serializer.is_valid():
+        serializer.save(uploaded_by=request.user) 
+       
+        return Response(serializer.data, status=status.HTTP_201_CREATED)
+    return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+@api_view(['GET'])
+@permission_classes([IsAuthenticated])
+def list_files(request):
+    files = FileUpload.objects.filter(uploaded_by=request.user)
+    serializer = FileUploadSerializer(files, many=True)
+    return Response(serializer.data)
+
+@api_view(['GET'])
+@permission_classes([IsAuthenticated])
+def retrieve_file(request, pk):
+    try:
+        file = FileUpload.objects.get(pk=pk, uploaded_by=request.user)
+        serializer = FileUploadSerializer(file, context={'request': request})
+        return Response(serializer.data)
+    except FileUpload.DoesNotExist:
+        return Response({"error": "File not found or access denied."}, status=404)

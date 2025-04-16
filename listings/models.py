@@ -13,3 +13,7 @@ class Job(models.Model):
     def __str__(self):
         return self.title
     
+class FileUpload(models.Model):
+    file = models.FileField(upload_to='uploads/')
+    uploaded_by = models.ForeignKey(User, on_delete=models.CASCADE)
+    uploaded_at = models.DateTimeField(auto_now_add=True)
