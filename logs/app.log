@@ -1,0 +1,1714 @@
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 2670
+Not Found: /
+"GET / HTTP/1.1" 404 2670
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2721
+"GET /admin/ HTTP/1.1" 200 11997
+"GET /admin/listings/logentry/ HTTP/1.1" 200 12638
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+Watching for file changes with StatReloader
+Unauthorized: /api/upload/
+"POST /api/login/ HTTP/1.1" 200 483
+Internal Server Error: /api/upload/
+Traceback (most recent call last):
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\listings\views.py", line 118, in upload_file
+    data = request.data.copy()
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\http\request.py", line 655, in copy
+    return self.__deepcopy__({})
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\http\request.py", line 616, in __deepcopy__
+    result.setlist(copy.deepcopy(key, memo), copy.deepcopy(value, memo))
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\copy.py", line 136, in deepcopy
+    y = copier(x, memo)
+        ^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\copy.py", line 196, in _deepcopy_list
+    append(deepcopy(a, memo))
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\copy.py", line 162, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\copy.py", line 259, in _reconstruct
+    state = deepcopy(state, memo)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\copy.py", line 136, in deepcopy
+    y = copier(x, memo)
+        ^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\copy.py", line 221, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+                             ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\copy.py", line 162, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\copy.py", line 259, in _reconstruct
+    state = deepcopy(state, memo)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\copy.py", line 136, in deepcopy
+    y = copier(x, memo)
+        ^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\copy.py", line 221, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+                             ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\copy.py", line 151, in deepcopy
+    rv = reductor(4)
+         ^^^^^^^^^^^
+TypeError: cannot pickle 'BufferedRandom' instances
+"POST /api/upload/ HTTP/1.1" 500 165245
+"POST /api/upload/ HTTP/1.1" 201 125
+Internal Server Error: /api/upload/
+Traceback (most recent call last):
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\listings\views.py", line 118, in upload_file
+    data = request.data.copy()
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\http\request.py", line 655, in copy
+    return self.__deepcopy__({})
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\http\request.py", line 616, in __deepcopy__
+    result.setlist(copy.deepcopy(key, memo), copy.deepcopy(value, memo))
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\copy.py", line 136, in deepcopy
+    y = copier(x, memo)
+        ^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\copy.py", line 196, in _deepcopy_list
+    append(deepcopy(a, memo))
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\copy.py", line 162, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\copy.py", line 259, in _reconstruct
+    state = deepcopy(state, memo)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\copy.py", line 136, in deepcopy
+    y = copier(x, memo)
+        ^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\copy.py", line 221, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+                             ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\copy.py", line 162, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\copy.py", line 259, in _reconstruct
+    state = deepcopy(state, memo)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\copy.py", line 136, in deepcopy
+    y = copier(x, memo)
+        ^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\copy.py", line 221, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+                             ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\copy.py", line 151, in deepcopy
+    rv = reductor(4)
+         ^^^^^^^^^^^
+TypeError: cannot pickle 'BufferedRandom' instances
+"POST /api/upload/ HTTP/1.1" 500 166098
+C:\Users\asbin\OneDrive\Desktop\job-listing-\listings\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 2670
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2721
+"GET /admin/ HTTP/1.1" 200 11997
+"GET /admin/listings/fileupload/ HTTP/1.1" 200 11704
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/listings/fileupload/add/ HTTP/1.1" 200 12828
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"POST /admin/listings/fileupload/add/ HTTP/1.1" 200 13064
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"POST /admin/listings/fileupload/add/ HTTP/1.1" 200 13050
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"POST /admin/listings/fileupload/add/ HTTP/1.1" 302 0
+"GET /admin/listings/fileupload/ HTTP/1.1" 200 12225
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+Internal Server Error: /api/upload/
+Traceback (most recent call last):
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\listings\views.py", line 118, in upload_file
+    data = request.data.copy()
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\http\request.py", line 655, in copy
+    return self.__deepcopy__({})
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\http\request.py", line 616, in __deepcopy__
+    result.setlist(copy.deepcopy(key, memo), copy.deepcopy(value, memo))
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\copy.py", line 136, in deepcopy
+    y = copier(x, memo)
+        ^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\copy.py", line 196, in _deepcopy_list
+    append(deepcopy(a, memo))
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\copy.py", line 162, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\copy.py", line 259, in _reconstruct
+    state = deepcopy(state, memo)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\copy.py", line 136, in deepcopy
+    y = copier(x, memo)
+        ^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\copy.py", line 221, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+                             ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\copy.py", line 162, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\copy.py", line 259, in _reconstruct
+    state = deepcopy(state, memo)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\copy.py", line 136, in deepcopy
+    y = copier(x, memo)
+        ^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\copy.py", line 221, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+                             ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\copy.py", line 151, in deepcopy
+    rv = reductor(4)
+         ^^^^^^^^^^^
+TypeError: cannot pickle 'BufferedRandom' instances
+"POST /api/upload/ HTTP/1.1" 500 165469
+Internal Server Error: /api/upload/
+Traceback (most recent call last):
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\listings\views.py", line 118, in upload_file
+    data = request.data.copy()
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\http\request.py", line 655, in copy
+    return self.__deepcopy__({})
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\http\request.py", line 616, in __deepcopy__
+    result.setlist(copy.deepcopy(key, memo), copy.deepcopy(value, memo))
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\copy.py", line 136, in deepcopy
+    y = copier(x, memo)
+        ^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\copy.py", line 196, in _deepcopy_list
+    append(deepcopy(a, memo))
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\copy.py", line 162, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\copy.py", line 259, in _reconstruct
+    state = deepcopy(state, memo)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\copy.py", line 136, in deepcopy
+    y = copier(x, memo)
+        ^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\copy.py", line 221, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+                             ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\copy.py", line 162, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\copy.py", line 259, in _reconstruct
+    state = deepcopy(state, memo)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\copy.py", line 136, in deepcopy
+    y = copier(x, memo)
+        ^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\copy.py", line 221, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+                             ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\copy.py", line 151, in deepcopy
+    rv = reductor(4)
+         ^^^^^^^^^^^
+TypeError: cannot pickle 'BufferedRandom' instances
+"POST /api/upload/ HTTP/1.1" 500 165469
+C:\Users\asbin\OneDrive\Desktop\job-listing-\listings\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /api/upload/
+Traceback (most recent call last):
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\listings\views.py", line 123, in upload_file
+    with open('uploaded/' + file_obj.name, 'wb+') as destination:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'uploaded/CET_AI_Code_239693657.zip'
+"POST /api/upload/ HTTP/1.1" 500 100675
+Internal Server Error: /api/upload/
+Traceback (most recent call last):
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\listings\views.py", line 123, in upload_file
+    with open('uploaded/' + file_obj.name, 'wb+') as destination:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'uploaded/CET_AI_Code_239693657.zip'
+"POST /api/upload/ HTTP/1.1" 500 100675
+C:\Users\asbin\OneDrive\Desktop\job-listing-\listings\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\asbin\OneDrive\Desktop\job-listing-\listings\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\asbin\OneDrive\Desktop\job-listing-\listings\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\asbin\OneDrive\Desktop\job-listing-\listings\views.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /api/upload/ HTTP/1.1" 200 41
+"POST /api/upload/ HTTP/1.1" 200 41
+C:\Users\asbin\OneDrive\Desktop\job-listing-\listings\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\asbin\OneDrive\Desktop\job-listing-\listings\views.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /api/upload/ HTTP/1.1" 201 125
+"POST /api/upload/ HTTP/1.1" 201 126
+C:\Users\asbin\OneDrive\Desktop\job-listing-\joblisting\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Unauthorized: /api/files/
+"GET /api/jobs/ HTTP/1.1" 200 2
+"GET /api/jobs/ HTTP/1.1" 200 2
+C:\Users\asbin\OneDrive\Desktop\job-listing-\listings\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /api/jobs/
+Traceback (most recent call last):
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\http\response.py", line 135, in __init__
+    self.status_code = int(status)
+                       ^^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'ReturnList'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\listings\views.py", line 72, in job_list
+    return Response({'error': 'NO Jobs Found'},serializer.data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\rest_framework\response.py", line 30, in __init__
+    super().__init__(None, status=status)
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\template\response.py", line 44, in __init__
+    super().__init__("", content_type, status, charset=charset, headers=headers)
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\http\response.py", line 375, in __init__
+    super().__init__(*args, **kwargs)
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\http\response.py", line 137, in __init__
+    raise TypeError("HTTP status code must be an integer.")
+TypeError: HTTP status code must be an integer.
+"GET /api/jobs/ HTTP/1.1" 500 125380
+C:\Users\asbin\OneDrive\Desktop\job-listing-\listings\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /api/jobs/ HTTP/1.1" 200 2
+Not Found: /api/jobs/1/
+"GET /api/jobs/1/ HTTP/1.1" 404 25
+Unauthorized: /api/jobs/
+"POST /api/jobs/ HTTP/1.1" 401 51
+Unauthorized: /api/login/
+"POST /api/login/ HTTP/1.1" 401 33
+"POST /api/register/ HTTP/1.1" 201 139
+"POST /api/login/ HTTP/1.1" 200 483
+"POST /api/jobs/ HTTP/1.1" 201 180
+"GET /api/jobs/1/ HTTP/1.1" 200 180
+"POST /api/upload/ HTTP/1.1" 201 126
+"GET /api/jobs/ HTTP/1.1" 200 182
+"GET /admin/listings/job/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/listings/job/ HTTP/1.1" 200 4210
+"GET /static/admin/css/login.css HTTP/1.1" 200 951
+Watching for file changes with StatReloader
+C:\Users\asbin\OneDrive\Desktop\job-listing-\listings\models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\asbin\OneDrive\Desktop\job-listing-\listings\models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\asbin\OneDrive\Desktop\job-listing-\listings\models.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /api/login/
+Traceback (most recent call last):
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedColumn: column listings_userprofile.password does not exist
+LINE 1: SELECT "listings_userprofile"."id", "listings_userprofile"."...
+                                            ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\listings\views.py", line 56, in login
+    user = authenticate(username=username, password=password)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\views\decorators\debug.py", line 75, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\contrib\auth\__init__.py", line 114, in authenticate
+    user = backend.authenticate(request, **credentials)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\contrib\auth\backends.py", line 65, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\contrib\auth\base_user.py", line 37, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\models\query.py", line 629, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\models\query.py", line 366, in __len__
+    self._fetch_all()
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\models\query.py", line 1935, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1622, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: column listings_userprofile.password does not exist
+LINE 1: SELECT "listings_userprofile"."id", "listings_userprofile"."...
+                                            ^
+
+"POST /api/login/ HTTP/1.1" 500 185099
+Internal Server Error: /api/register/
+Traceback (most recent call last):
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\listings\views.py", line 26, in register
+    if serializer.is_valid():
+       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\rest_framework\serializers.py", line 225, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\rest_framework\serializers.py", line 444, in run_validation
+    value = self.to_internal_value(data)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\rest_framework\serializers.py", line 497, in to_internal_value
+    for field in fields:
+                 ^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\rest_framework\serializers.py", line 380, in _writable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\rest_framework\serializers.py", line 374, in fields
+    for key, value in self.get_fields().items():
+                      ^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\rest_framework\serializers.py", line 1080, in get_fields
+    info = model_meta.get_field_info(model)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\rest_framework\utils\model_meta.py", line 39, in get_field_info
+    forward_relations = _get_forward_relationships(opts)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\rest_framework\utils\model_meta.py", line 96, in _get_forward_relationships
+    not field.remote_field.through._meta.auto_created
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute '_meta'
+"POST /api/register/ HTTP/1.1" 500 139277
+C:\Users\asbin\OneDrive\Desktop\job-listing-\listings\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\asbin\OneDrive\Desktop\job-listing-\listings\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\asbin\OneDrive\Desktop\job-listing-\listings\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\asbin\OneDrive\Desktop\job-listing-\listings\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\asbin\OneDrive\Desktop\job-listing-\joblisting\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\asbin\OneDrive\Desktop\job-listing-\listings\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /api/login/ HTTP/1.1" 200 483
+Bad Request: /api/jobs/1/
+"PUT /api/jobs/1/ HTTP/1.1" 400 176
+"PUT /api/jobs/1/ HTTP/1.1" 200 177
+C:\Users\asbin\OneDrive\Desktop\job-listing-\listings\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\asbin\OneDrive\Desktop\job-listing-\listings\permissions.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\asbin\OneDrive\Desktop\job-listing-\listings\permissions.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\asbin\OneDrive\Desktop\job-listing-\listings\permissions.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\asbin\OneDrive\Desktop\job-listing-\listings\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\asbin\OneDrive\Desktop\job-listing-\listings\admin.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\asbin\OneDrive\Desktop\job-listing-\listings\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\asbin\OneDrive\Desktop\job-listing-\listings\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\asbin\OneDrive\Desktop\job-listing-\listings\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\asbin\OneDrive\Desktop\job-listing-\listings\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\asbin\OneDrive\Desktop\job-listing-\listings\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\asbin\OneDrive\Desktop\job-listing-\joblisting\settings.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /admin/login/?next=/admin/listings/job/ HTTP/1.1" 200 4381
+"GET /static/admin/css/base.css HTTP/1.1" 304 0
+"GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+"GET /static/admin/js/theme.js HTTP/1.1" 304 0
+"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+"GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+"POST /admin/login/?next=/admin/listings/job/ HTTP/1.1" 302 0
+"GET /admin/listings/job/ HTTP/1.1" 200 12642
+"GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+"GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+"GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+"GET /static/admin/js/core.js HTTP/1.1" 304 0
+"GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+"GET /static/admin/js/actions.js HTTP/1.1" 304 0
+"GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+"GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+"GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /static/admin/js/filters.js HTTP/1.1" 304 0
+"GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+"GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+"GET /admin/listings/logentry/ HTTP/1.1" 200 24455
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/listings/job/ HTTP/1.1" 200 12642
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/listings/fileupload/ HTTP/1.1" 200 12595
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/auth/user/ HTTP/1.1" 200 16717
+"GET /static/admin/img/search.svg HTTP/1.1" 304 0
+"GET /static/admin/img/icon-no.svg HTTP/1.1" 304 0
+"GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /static/admin/img/sorting-icons.svg HTTP/1.1" 304 0
+"GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 304 0
+"GET /admin/auth/user/7/change/ HTTP/1.1" 200 25528
+"GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 304 0
+"GET /static/admin/js/SelectBox.js HTTP/1.1" 304 0
+"GET /static/admin/css/forms.css HTTP/1.1" 304 0
+"GET /static/admin/js/calendar.js HTTP/1.1" 304 0
+"GET /static/admin/js/SelectFilter2.js HTTP/1.1" 304 0
+"GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+"GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+"GET /static/admin/img/selector-icons.svg HTTP/1.1" 304 0
+"GET /static/admin/img/icon-clock.svg HTTP/1.1" 304 0
+"GET /static/admin/img/icon-calendar.svg HTTP/1.1" 304 0
+"GET /admin/auth/user/ HTTP/1.1" 200 16717
+C:\Users\asbin\OneDrive\Desktop\job-listing-\listings\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\asbin\OneDrive\Desktop\job-listing-\listings\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\asbin\OneDrive\Desktop\job-listing-\listings\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\asbin\OneDrive\Desktop\job-listing-\listings\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\asbin\OneDrive\Desktop\job-listing-\listings\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\asbin\OneDrive\Desktop\job-listing-\listings\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\asbin\OneDrive\Desktop\job-listing-\listings\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\asbin\OneDrive\Desktop\job-listing-\listings\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\asbin\OneDrive\Desktop\job-listing-\listings\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\asbin\OneDrive\Desktop\job-listing-\listings\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\asbin\OneDrive\Desktop\job-listing-\listings\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\asbin\OneDrive\Desktop\job-listing-\listings\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 2670
+Not Found: /promote-user
+"GET /promote-user HTTP/1.1" 404 2724
+"GET /api/promote-user HTTP/1.1" 301 0
+Unauthorized: /api/promote-user/
+"GET /api/promote-user/ HTTP/1.1" 401 3784
+"GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+"GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+"GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+"GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+"GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 304 0
+"GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+Unauthorized: /api/promote-user/
+"GET /api/promote-user/ HTTP/1.1" 401 58
+"POST /api/login/ HTTP/1.1" 200 483
+Unauthorized: /api/promote-user/
+"GET /api/promote-user/ HTTP/1.1" 401 58
+"POST /api/jobs/ HTTP/1.1" 201 181
+Unauthorized: /api/promote-user/
+"GET /api/promote-user/ HTTP/1.1" 401 58
+Unauthorized: /api/promote-user/
+"GET /api/promote-user/ HTTP/1.1" 401 172
+Unauthorized: /api/promote-user/
+"GET /api/promote-user/ HTTP/1.1" 401 172
+Unauthorized: /api/promote-user/
+"GET /api/promote-user/ HTTP/1.1" 401 172
+Not Found: /api/promote-user/1/
+"GET /api/promote-user/1/ HTTP/1.1" 404 4993
+Unauthorized: /api/promote-user/
+"GET /api/promote-user/ HTTP/1.1" 401 172
+Unauthorized: /api/promote-user/
+"POST /api/promote-user/ HTTP/1.1" 401 172
+Bad Request: /api/jobs/4/
+"PUT /api/jobs/4/ HTTP/1.1" 400 176
+Not Found: /api/jobs/10/
+"DELETE /api/jobs/10/ HTTP/1.1" 404 25
+Not Found: /api/jobs/1/
+"DELETE /api/jobs/1/ HTTP/1.1" 404 25
+C:\Users\asbin\OneDrive\Desktop\job-listing-\listings\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\asbin\OneDrive\Desktop\job-listing-\listings\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\asbin\OneDrive\Desktop\job-listing-\joblisting\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\asbin\OneDrive\Desktop\job-listing-\listings\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\asbin\OneDrive\Desktop\job-listing-\listings\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\asbin\OneDrive\Desktop\job-listing-\listings\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\asbin\OneDrive\Desktop\job-listing-\listings\urls.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /api/user HTTP/1.1" 301 0
+Unauthorized: /api/user/
+"GET /api/user/ HTTP/1.1" 401 51
+Unauthorized: /api/user/
+"GET /api/user/ HTTP/1.1" 401 51
+Unauthorized: /api/jobs/4/
+"PUT /api/jobs/4/ HTTP/1.1" 401 51
+Unauthorized: /api/jobs/
+"POST /api/jobs/ HTTP/1.1" 401 51
+Unauthorized: /api/upload/
+Unauthorized: /api/login/
+"POST /api/login/ HTTP/1.1" 401 33
+Unauthorized: /api/login/
+"POST /api/login/ HTTP/1.1" 401 33
+"POST /api/login/ HTTP/1.1" 200 483
+Internal Server Error: /api/user/
+Traceback (most recent call last):
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\rest_framework\views.py", line 503, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\rest_framework\views.py", line 421, in initial
+    self.check_permissions(request)
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\rest_framework\views.py", line 338, in check_permissions
+    if not permission.has_permission(request, self):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\listings\permissions.py", line 8, in has_permission
+    return request.user.is_authenticated and request.user.role == 'admin'
+                                             ^^^^^^^^^^^^^^^^^
+AttributeError: 'User' object has no attribute 'role'
+"GET /api/user/ HTTP/1.1" 500 104300
+Internal Server Error: /api/user/
+Traceback (most recent call last):
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\rest_framework\views.py", line 503, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\rest_framework\views.py", line 421, in initial
+    self.check_permissions(request)
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\rest_framework\views.py", line 338, in check_permissions
+    if not permission.has_permission(request, self):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\listings\permissions.py", line 8, in has_permission
+    return request.user.is_authenticated and request.user.role == 'admin'
+                                             ^^^^^^^^^^^^^^^^^
+AttributeError: 'User' object has no attribute 'role'
+"GET /api/user/ HTTP/1.1" 500 104299
+Internal Server Error: /api/user/
+Traceback (most recent call last):
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\rest_framework\views.py", line 503, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\rest_framework\views.py", line 421, in initial
+    self.check_permissions(request)
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\rest_framework\views.py", line 338, in check_permissions
+    if not permission.has_permission(request, self):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\listings\permissions.py", line 8, in has_permission
+    return request.user.is_authenticated and request.user.role == 'admin'
+                                             ^^^^^^^^^^^^^^^^^
+AttributeError: 'User' object has no attribute 'role'
+"GET /api/user/ HTTP/1.1" 500 104299
+C:\Users\asbin\OneDrive\Desktop\job-listing-\listings\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\asbin\OneDrive\Desktop\job-listing-\listings\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\asbin\OneDrive\Desktop\job-listing-\listings\views.py changed, reloading.
+Watching for file changes with StatReloader
+Unauthorized: /api/promote-user/
+"GET /api/promote-user/ HTTP/1.1" 401 58
+Unauthorized: /api/promote-user/
+"GET /api/promote-user/ HTTP/1.1" 401 172
+Unauthorized: /api/login/
+"POST /api/login/ HTTP/1.1" 401 33
+Unauthorized: /api/login/
+"POST /api/login/ HTTP/1.1" 401 33
+"POST /api/login/ HTTP/1.1" 200 483
+Unauthorized: /api/promote-user/
+"GET /api/promote-user/ HTTP/1.1" 401 172
+Unauthorized: /api/promote-user/
+"GET /api/promote-user/ HTTP/1.1" 401 172
+Unauthorized: /api/login/
+"POST /api/login/ HTTP/1.1" 401 33
+Unauthorized: /api/login/
+"POST /api/login/ HTTP/1.1" 401 33
+"GET /admin/auth/user/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/auth/user/ HTTP/1.1" 200 4204
+"POST /admin/login/?next=/admin/auth/user/ HTTP/1.1" 200 4372
+"POST /admin/login/?next=/admin/auth/user/ HTTP/1.1" 200 4372
+"POST /admin/login/?next=/admin/auth/user/ HTTP/1.1" 200 4372
+"POST /admin/login/?next=/admin/auth/user/ HTTP/1.1" 200 4372
+C:\Users\asbin\OneDrive\Desktop\job-listing-\joblisting\settings.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /admin/login/?next=/admin/auth/user/ HTTP/1.1" 302 0
+"GET /admin/auth/user/ HTTP/1.1" 200 16717
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"POST /api/login/ HTTP/1.1" 200 483
+Unauthorized: /api/promote-user/
+"GET /api/promote-user/ HTTP/1.1" 401 172
+Unauthorized: /api/promote-user/
+"GET /api/promote-user/ HTTP/1.1" 401 172
+Unauthorized: /api/promote-user/
+"GET /api/promote-user/ HTTP/1.1" 401 172
+Unauthorized: /api/promote-user/
+"GET /api/promote-user/ HTTP/1.1" 401 172
+C:\Users\asbin\OneDrive\Desktop\job-listing-\listings\views.py changed, reloading.
+Watching for file changes with StatReloader
+Unauthorized: /api/promote-user/
+"GET /api/promote-user/ HTTP/1.1" 401 172
+Unauthorized: /api/promote-user/
+"POST /api/promote-user/ HTTP/1.1" 401 172
+C:\Users\asbin\OneDrive\Desktop\job-listing-\listings\views.py changed, reloading.
+Watching for file changes with StatReloader
+Unauthorized: /api/promote-user/
+"POST /api/promote-user/ HTTP/1.1" 401 172
+C:\Users\asbin\OneDrive\Desktop\job-listing-\listings\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\asbin\OneDrive\Desktop\job-listing-\listings\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\asbin\OneDrive\Desktop\job-listing-\listings\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\asbin\OneDrive\Desktop\job-listing-\joblisting\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\asbin\OneDrive\Desktop\job-listing-\listings\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\asbin\OneDrive\Desktop\job-listing-\listings\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\asbin\OneDrive\Desktop\job-listing-\listings\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\asbin\OneDrive\Desktop\job-listing-\listings\models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\asbin\OneDrive\Desktop\job-listing-\joblisting\settings.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /api/user HTTP/1.1" 301 0
+Unauthorized: /api/user/
+"GET /api/user/ HTTP/1.1" 401 58
+Internal Server Error: /api/user
+Traceback (most recent call last):
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\utils\deprecation.py", line 122, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\middleware\common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/api/user/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+"POST /api/user HTTP/1.1" 500 73313
+Unauthorized: /api/user/
+"POST /api/user/ HTTP/1.1" 401 172
+Unauthorized: /api/user/
+"POST /api/user/ HTTP/1.1" 401 172
+C:\Users\asbin\OneDrive\Desktop\job-listing-\listings\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Unauthorized: /api/user/
+"POST /api/user/ HTTP/1.1" 401 172
+Unauthorized: /api/user/
+"GET /api/user/ HTTP/1.1" 401 5040
+Unauthorized: /api/user/
+"GET /api/user/ HTTP/1.1" 401 5040
+Unauthorized: /api/user/
+"GET /api/user/ HTTP/1.1" 401 5040
+Unauthorized: /api/user/
+"GET /api/user/?format=json HTTP/1.1" 401 58
+Unauthorized: /api/user/
+"GET /api/user/ HTTP/1.1" 401 5040
+Unauthorized: /api/user/
+"GET /api/user/ HTTP/1.1" 401 172
+Internal Server Error: /api/login/
+Traceback (most recent call last):
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: listings_customuser
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\listings\views.py", line 54, in login
+    user = authenticate(username=username, password=password)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\views\decorators\debug.py", line 75, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\contrib\auth\__init__.py", line 114, in authenticate
+    user = backend.authenticate(request, **credentials)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\contrib\auth\backends.py", line 65, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\contrib\auth\base_user.py", line 37, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\models\query.py", line 629, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\models\query.py", line 366, in __len__
+    self._fetch_all()
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\models\query.py", line 1935, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1622, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: listings_customuser
+"POST /api/login/ HTTP/1.1" 500 193511
+Watching for file changes with StatReloader
+Internal Server Error: /api/login/
+Traceback (most recent call last):
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: listings_customuser
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\listings\views.py", line 54, in login
+    user = authenticate(username=username, password=password)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\views\decorators\debug.py", line 75, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\contrib\auth\__init__.py", line 114, in authenticate
+    user = backend.authenticate(request, **credentials)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\contrib\auth\backends.py", line 65, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\contrib\auth\base_user.py", line 37, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\models\query.py", line 629, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\models\query.py", line 366, in __len__
+    self._fetch_all()
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\models\query.py", line 1935, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1622, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: listings_customuser
+"POST /api/login/ HTTP/1.1" 500 193511
+C:\Users\asbin\OneDrive\Desktop\job-listing-\listings\admin.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /api/login/
+Traceback (most recent call last):
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: listings_customuser
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\listings\views.py", line 54, in login
+    user = authenticate(username=username, password=password)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\views\decorators\debug.py", line 75, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\contrib\auth\__init__.py", line 114, in authenticate
+    user = backend.authenticate(request, **credentials)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\contrib\auth\backends.py", line 65, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\contrib\auth\base_user.py", line 37, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\models\query.py", line 629, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\models\query.py", line 366, in __len__
+    self._fetch_all()
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\models\query.py", line 1935, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1622, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: listings_customuser
+"POST /api/login/ HTTP/1.1" 500 193511
+Internal Server Error: /admin/auth/user/
+Traceback (most recent call last):
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: listings_customuser
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\contrib\admin\sites.py", line 265, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\utils\decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\utils\decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\contrib\admin\sites.py", line 234, in inner
+    if not self.has_permission(request):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\contrib\admin\sites.py", line 207, in has_permission
+    return request.user.is_active and request.user.is_staff
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\utils\functional.py", line 251, in inner
+    self._setup()
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\utils\functional.py", line 404, in _setup
+    self._wrapped = self._setupfunc()
+                    ^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\contrib\auth\middleware.py", line 39, in <lambda>
+    request.user = SimpleLazyObject(lambda: get_user(request))
+                                            ^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\contrib\auth\middleware.py", line 19, in get_user
+    request._cached_user = auth.get_user(request)
+                           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\contrib\auth\__init__.py", line 311, in get_user
+    user = backend.get_user(user_id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\contrib\auth\backends.py", line 232, in get_user
+    user = UserModel._default_manager.get(pk=user_id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\models\query.py", line 629, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\models\query.py", line 366, in __len__
+    self._fetch_all()
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\models\query.py", line 1935, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1622, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: listings_customuser
+"GET /admin/auth/user/ HTTP/1.1" 500 195782
+Internal Server Error: /admin/auth/user/
+Traceback (most recent call last):
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: listings_customuser
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\contrib\admin\sites.py", line 265, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\utils\decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\utils\decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\contrib\admin\sites.py", line 234, in inner
+    if not self.has_permission(request):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\contrib\admin\sites.py", line 207, in has_permission
+    return request.user.is_active and request.user.is_staff
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\utils\functional.py", line 251, in inner
+    self._setup()
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\utils\functional.py", line 404, in _setup
+    self._wrapped = self._setupfunc()
+                    ^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\contrib\auth\middleware.py", line 39, in <lambda>
+    request.user = SimpleLazyObject(lambda: get_user(request))
+                                            ^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\contrib\auth\middleware.py", line 19, in get_user
+    request._cached_user = auth.get_user(request)
+                           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\contrib\auth\__init__.py", line 311, in get_user
+    user = backend.get_user(user_id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\contrib\auth\backends.py", line 232, in get_user
+    user = UserModel._default_manager.get(pk=user_id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\models\query.py", line 629, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\models\query.py", line 366, in __len__
+    self._fetch_all()
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\models\query.py", line 1935, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1622, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: listings_customuser
+"GET /admin/auth/user/ HTTP/1.1" 500 195782
+Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: listings_customuser
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\contrib\admin\sites.py", line 265, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\utils\decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\utils\decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\contrib\admin\sites.py", line 234, in inner
+    if not self.has_permission(request):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\contrib\admin\sites.py", line 207, in has_permission
+    return request.user.is_active and request.user.is_staff
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\utils\functional.py", line 251, in inner
+    self._setup()
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\utils\functional.py", line 404, in _setup
+    self._wrapped = self._setupfunc()
+                    ^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\contrib\auth\middleware.py", line 39, in <lambda>
+    request.user = SimpleLazyObject(lambda: get_user(request))
+                                            ^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\contrib\auth\middleware.py", line 19, in get_user
+    request._cached_user = auth.get_user(request)
+                           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\contrib\auth\__init__.py", line 311, in get_user
+    user = backend.get_user(user_id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\contrib\auth\backends.py", line 232, in get_user
+    user = UserModel._default_manager.get(pk=user_id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\models\query.py", line 629, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\models\query.py", line 366, in __len__
+    self._fetch_all()
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\models\query.py", line 1935, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1622, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: listings_customuser
+"GET /admin/ HTTP/1.1" 500 195000
+Watching for file changes with StatReloader
+"GET /admin/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/ HTTP/1.1" 200 4184
+Internal Server Error: /admin/login/
+Traceback (most recent call last):
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: listings_customuser
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\contrib\admin\sites.py", line 449, in login
+    return LoginView.as_view(**defaults)(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\views\decorators\debug.py", line 143, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\utils\decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\utils\decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\contrib\auth\views.py", line 89, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\views\generic\edit.py", line 150, in post
+    if form.is_valid():
+       ^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\forms\forms.py", line 206, in is_valid
+    return self.is_bound and not self.errors
+                                 ^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\forms\forms.py", line 201, in errors
+    self.full_clean()
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\forms\forms.py", line 338, in full_clean
+    self._clean_form()
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\forms\forms.py", line 354, in _clean_form
+    cleaned_data = self.clean()
+                   ^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\views\decorators\debug.py", line 75, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\contrib\auth\forms.py", line 366, in clean
+    self.user_cache = authenticate(
+                      ^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\views\decorators\debug.py", line 75, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\contrib\auth\__init__.py", line 114, in authenticate
+    user = backend.authenticate(request, **credentials)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\contrib\auth\backends.py", line 65, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\contrib\auth\base_user.py", line 37, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\models\query.py", line 629, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\models\query.py", line 366, in __len__
+    self._fetch_all()
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\models\query.py", line 1935, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1622, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asbin\OneDrive\Desktop\job-listing-\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: listings_customuser
+"POST /admin/login/?next=/admin/ HTTP/1.1" 500 259026

@@ -115,7 +115,8 @@ def job_detail(request, pk):
 @permission_classes([IsAuthenticated])
 @parser_classes([MultiPartParser, FormParser])
 def upload_file(request):
-    data = request.data.copy()
+    data = request.data
+    data._mutable = True
     data['uploaded_by'] = request.user.id
     serializer = FileUploadSerializer(data=data)
     if serializer.is_valid():
